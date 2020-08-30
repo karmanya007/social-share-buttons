@@ -7,175 +7,12 @@
     <title>Social Share Buttons Test</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
-    <style>
-        body::-webkit-scrollbar {
-            width: 0px;
-        }
-
-        /* body::-webkit-scrollbar-track {
-            background: rgb(207, 207, 207);
-        }
-
-        body::-webkit-scrollbar-thumb {
-            background-color: rgb(65, 65, 65);
-        } */
-
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-            font: 400 15px/1.8 "Lato", sans-serif;
-            color: #777;
-        }
-
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            position: relative;
-            opacity: 0.85;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-
-        .bgimg-1 {
-            background-image: url("./img/img1.jpg");
-            min-height: 100%;
-        }
-
-        .bgimg-2 {
-            background-image: url("./img/img2.jpg");
-            min-height: 400px;
-        }
-
-        .bgimg-3 {
-            background-image: url("./img/img3.jpg");
-            min-height: 400px;
-        }
-
-        .caption {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            color: #000;
-        }
-
-        .caption span.border {
-            background-color: #111;
-            color: #fff;
-            padding: 18px;
-            font-size: 25px;
-            letter-spacing: 10px;
-        }
-
-        h3 {
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            font: 20px "Lato", sans-serif;
-            color: #111;
-        }
-
-        .pinterest-img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-
-        /* Share Buttons Starts*/
-
-        .share-btn-container {
-            background: rgb(233, 233, 233);
-            display: flex;
-            flex-direction: column;
-            padding: 16px;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.089);
-            position: fixed;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 999;
-        }
-
-        .share-btn-container a i {
-            font-size: 32px;
-        }
-
-        .share-btn-container a {
-            margin: 12px 0;
-            transition: 500ms;
-        }
-
-        .share-btn-container a:hover {
-            transform: scale(1.2);
-        }
-
-        .share-btn-container .fa-facebook {
-            color: #3b5998;
-        }
-
-        .share-btn-container .fa-twitter {
-            color: #1da1f2;
-        }
-
-        .share-btn-container .fa-linkedin {
-            color: #0077b5;
-        }
-
-        .share-btn-container .fa-pinterest {
-            color: #bd081c;
-        }
-
-        .share-btn-container .fa-whatsapp {
-            color: #25d366;
-        }
-
-        /* Media Queries */
-
-        @media (max-width: 550px) {
-            .content {
-                padding: 8px 32px;
-            }
-
-            .share-btn-container {
-                transform: unset;
-                top: unset;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                flex-direction: row;
-                box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
-                padding: 16px 0;
-                justify-content: center;
-            }
-
-            .share-btn-container a {
-                margin: 0 32px;
-            }
-        }
-
-        /* Share Buttons Ends*/
-
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
-
-            .bgimg-1,
-            .bgimg-2,
-            .bgimg-3 {
-                background-attachment: scroll;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Social share buttons starts -->
-    <div class="share-btn-container">
+    <div class="share-btn-container float">
         <a href="#">
             <i class="fab fa-facebook"></i>
         </a>
@@ -189,6 +26,24 @@
             <i class="fab fa-linkedin"></i>
         </a>
         <a href="#">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <div class="share-btn-container small">
+        <a class="fb-btn" href="#">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="twitter-btn" href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="pinterest-btn" href="#">
+            <i class="fab fa-pinterest-p"></i>
+        </a>
+        <a class="linkedin-btn" href="#">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a class="whatsapp-btn" href="#">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
@@ -246,6 +101,8 @@
             src="https://images.unsplash.com/photo-1597699639766-6d124965a52d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
             alt="" />
     </div>
+
+
     <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"></a>
 
     <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>

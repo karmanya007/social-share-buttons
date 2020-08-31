@@ -135,7 +135,7 @@ h3 {
 	color: var(--whatsapp-color);
 }
 
-/* Small buttons */
+/* 2. Small buttons */
 
 .share-btn-container.small {
 	display: flex;
@@ -190,10 +190,83 @@ h3 {
 	background-color: var(--whatsapp-color);
 }
 .share-btn-container.small a:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 	background-color: #000;
 }
 
+/* 3. Grid buttons*/
+
+.share-btn-container.grid {
+	display: grid;
+	grid-template-columns: 250px 250px;
+	margin-bottom: 20px;
+}
+.share-btn-container.grid a {
+	background-color: rgb(233, 173, 173);
+	width: calc(var(--btn-width) * 11);
+	margin-top: 20px;
+	height: calc(var(--btn-width) * 2);
+	border-radius: calc(var(--btn-width) * 0.2);
+	text-decoration: none;
+	cursor: pointer;
+	overflow: hidden;
+	transition: 60ms;
+}
+.share-btn-container.grid a.fb-btn {
+	background-color: #5c77b1;
+}
+.share-btn-container.grid a.twitter-btn {
+	background-color: #3ab0fa;
+}
+.share-btn-container.grid a.pinterest-btn {
+	background-color: #b93343;
+}
+.share-btn-container.grid a.linkedin-btn {
+	background-color: #1d7fb4;
+}
+.share-btn-container.grid a.whatsapp-btn {
+	background-color: #5ac782;
+}
+.share-btn-container.grid a i {
+	font-size: var(--btn-width);
+	margin: calc(var(--btn-width) * 0.6);
+	color: white;
+}
+.share-btn-container.grid a .icon-bg {
+	display: inline-block;
+	text-align-last: center;
+	position: absolute;
+	border-radius: calc(var(--btn-width) * 0.2);
+	height: calc(var(--btn-width) * 2);
+	width: calc(var(--btn-width) * 2.2);
+}
+.share-btn-container.grid a .fb-icon-bg {
+	background-color: var(--fb-color);
+}
+.share-btn-container.grid a .twitter-icon-bg {
+	background-color: var(--twitter-color);
+}
+.share-btn-container.grid a .pinterest-icon-bg {
+	background-color: var(--pinterest-color);
+}
+.share-btn-container.grid a .linkedin-icon-bg {
+	background-color: var(--linkedin-color);
+}
+.share-btn-container.grid a .whatsapp-icon-bg {
+	background-color: var(--whatsapp-color);
+}
+.share-btn-container.grid a .share-text {
+	color: white;
+	position: relative;
+	left: 25%;
+	top: 20%;
+}
+.share-btn-container.grid a:hover .icon-bg {
+	background-color: rgb(59, 59, 59);
+}
+.share-btn-container.grid a:hover {
+	background-color: #000;
+}
 /* Media Queries */
 
 @media (max-width: 550px) {

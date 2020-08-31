@@ -213,7 +213,7 @@ h3 {
 	transition: 60ms;
 }
 .share-btn-container.grid a.fb-btn {
-	background-color: #5c77b1;
+	background-color: #506fb1;
 }
 .share-btn-container.grid a.twitter-btn {
 	background-color: #3ab0fa;
@@ -266,6 +266,37 @@ h3 {
 }
 .share-btn-container.grid a:hover {
 	background-color: #000;
+}
+
+/* 3. Share list*/
+
+.share-btn-container.share-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.share-btn-container.share-list a {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	text-decoration: none;
+	font-size: calc(var(--btn-width) * 0.85);
+	font-weight: 600;
+}
+.share-btn-container.share-list a.fb-btn {
+	color: var(--fb-color);
+}
+.share-btn-container.share-list a.twitter-btn {
+	color: var(--twitter-color);
+}
+.share-btn-container.share-list a.pinterest-btn {
+	color: var(--pinterest-color);
+}
+.share-btn-container.share-list a.linkedin-btn {
+	color: var(--linkedin-color);
+}
+.share-btn-container.share-list a.whatsapp-btn {
+	color: var(--whatsapp-color);
 }
 /* Media Queries */
 

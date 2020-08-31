@@ -3,10 +3,13 @@
 :root {
 	--btn-width: 20px;
 	--fb-color: #3b5998;
+	--fb-messenger-color: #0078ff;
 	--twitter-color: #1da1f2;
 	--pinterest-color: #bd081c;
 	--linkedin-color: #0077b5;
 	--whatsapp-color: #25d366;
+	--skype-color: #00aff0;
+	--telegram-color: #0088cc;
 }
 
 body::-webkit-scrollbar {
@@ -142,6 +145,7 @@ h3 {
 	justify-items: center;
 	align-content: center;
 	text-align: center;
+	flex-wrap: wrap;
 }
 .share-btn-container.small a i {
 	font-size: var(--btn-width);
@@ -212,6 +216,21 @@ h3 {
 	overflow: hidden;
 	transition: 60ms;
 }
+.share-btn-container.small .fa-facebook-f {
+	color: white;
+}
+.share-btn-container.small .fa-twitter {
+	color: white;
+}
+.share-btn-container.small .fa-pinterest-p {
+	color: white;
+}
+.share-btn-container.small .fa-linkedin-in {
+	color: white;
+}
+.share-btn-container.small .fa-whatsapp {
+	color: white;
+}
 .share-btn-container.grid a.fb-btn {
 	background-color: #506fb1;
 }
@@ -275,6 +294,7 @@ h3 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .share-btn-container.share-list a {
 	margin-top: 12px;
@@ -297,6 +317,96 @@ h3 {
 }
 .share-btn-container.share-list a.whatsapp-btn {
 	color: var(--whatsapp-color);
+}
+
+/* Messengers */
+
+.share-btn-container.messengers {
+	display: flex;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+.share-btn-container.messengers a {
+	margin: 10px;
+	background-color: rgb(233, 173, 173);
+	width: calc(var(--btn-width) * 11);
+	margin-top: 20px;
+	height: calc(var(--btn-width) * 2);
+	border-radius: calc(var(--btn-width) * 0.2);
+	text-decoration: none;
+	cursor: pointer;
+	overflow: hidden;
+	transition: 100ms;
+}
+.share-btn-container.small .fa-facebook-messenger {
+	color: white;
+}
+.share-btn-container.small .fa-twitter {
+	color: white;
+}
+.share-btn-container.small .fa-skype {
+	color: white;
+}
+.share-btn-container.small .fa-telegram-plane {
+	color: white;
+}
+.share-btn-container.small .fa-whatsapp {
+	color: white;
+}
+.share-btn-container.messengers a.messenger-btn {
+	background-color: #2e8efc;
+}
+.share-btn-container.messengers a.twitter-btn {
+	background-color: #3ab0fa;
+}
+.share-btn-container.messengers a.skype-btn {
+	background-color: #26b9ee;
+}
+.share-btn-container.messengers a.telegram-btn {
+	background-color: #2a91c5;
+}
+.share-btn-container.messengers a.whatsapp-btn {
+	background-color: #5ac782;
+}
+.share-btn-container.messengers a i {
+	font-size: var(--btn-width);
+	margin: calc(var(--btn-width) * 0.6);
+	color: white;
+}
+.share-btn-container.messengers a .icon-bg {
+	display: inline-block;
+	text-align-last: center;
+	position: absolute;
+	border-radius: calc(var(--btn-width) * 0.2);
+	height: calc(var(--btn-width) * 2);
+	width: calc(var(--btn-width) * 2.2);
+}
+.share-btn-container.messengers a .messenger-icon-bg {
+	background-color: var(--fb-messenger-color);
+}
+.share-btn-container.messengers a .twitter-icon-bg {
+	background-color: var(--twitter-color);
+}
+.share-btn-container.messengers a .skype-icon-bg {
+	background-color: var(--skype-color);
+}
+.share-btn-container.messengers a .telegram-icon-bg {
+	background-color: var(--telegram-color);
+}
+.share-btn-container.messengers a .whatsapp-icon-bg {
+	background-color: var(--whatsapp-color);
+}
+.share-btn-container.messengers a .share-text {
+	color: white;
+	position: relative;
+	left: 25%;
+	top: 20%;
+}
+.share-btn-container.messengers a:hover .icon-bg {
+	background-color: rgb(59, 59, 59);
+}
+.share-btn-container.messengers a:hover {
+	background-color: #000;
 }
 /* Media Queries */
 

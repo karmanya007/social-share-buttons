@@ -12,74 +12,12 @@
 	--telegram-color: #0088cc;
 }
 
-body::-webkit-scrollbar {
-	width: 0px;
-}
-
-/* body::-webkit-scrollbar-track {
-    background: rgb(207, 207, 207);
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(65, 65, 65);
-} */
-
 body,
 html {
 	height: 100%;
 	margin: 0;
+	padding: 0;
 	font: 400 15px/1.8 "Lato", sans-serif;
-	color: #777;
-}
-
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
-	position: relative;
-	opacity: 0.85;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.bgimg-1 {
-	background-image: url("./img/img1.jpg");
-	min-height: 100%;
-}
-
-.bgimg-2 {
-	background-image: url("./img/img2.jpg");
-	min-height: 400px;
-}
-
-.bgimg-3 {
-	background-image: url("./img/img3.jpg");
-	min-height: 400px;
-}
-
-.caption {
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 100%;
-	text-align: center;
-	color: #000;
-}
-
-.caption span.border {
-	background-color: #111;
-	color: #fff;
-	padding: 18px;
-	font-size: 25px;
-	letter-spacing: 10px;
-}
-
-h3 {
-	letter-spacing: 5px;
-	text-transform: uppercase;
-	font: 20px "Lato", sans-serif;
-	color: #111;
 }
 
 .pinterest-img {
@@ -443,45 +381,43 @@ h3 {
 	}
 }
 
-/* ADI */
-
 span {
 	cursor: pointer;
 }
-.il-btn {
+.share-btn-container.inline-btn {
 	display: flex;
 	margin-top: 2rem;
 	justify-content: center;
 	font-size: 1rem;
 }
-.il-btn span {
+.share-btn-container.inline-btn span {
 	margin: 1rem;
 	border-radius: 5px;
 }
-.il-btn .c {
+.share-btn-container.inline-btn .c {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
-.il-btn p {
+.share-btn-container.inline-btn p {
 	display: inline;
 }
-.il-btn a {
+.share-btn-container.inline-btn a {
 	text-decoration-line: none;
 }
-.il-btn .p {
+.share-btn-container.inline-btn .p {
 	color: #fff;
 	font-weight: 400;
 	padding-left: 0.3rem;
 }
-.il-btn i {
+.share-btn-container.inline-btn i {
 	color: #fff;
 }
-.il-btn span:nth-child(1) {
+.share-btn-container.inline-btn span:nth-child(1) {
 	background-color: #1da1f2;
 	height: 2rem;
 	width: 6rem;
 }
-.il-btn span:nth-child(1) .c {
+.share-btn-container.inline-btn span:nth-child(1) .c {
 	background-color: #56b8f5;
 	margin-top: 0.5rem;
 	position: absolute;
@@ -489,18 +425,18 @@ span {
 	width: 2rem;
 	margin-top: -0.01rem;
 }
-.il-btn span:nth-child(1) .c i {
+.share-btn-container.inline-btn span:nth-child(1) .c i {
 	margin-left: 0.5rem;
 	margin-top: 0.5rem;
 	color: #fff;
 }
 
-.il-btn span:nth-child(2) {
+.share-btn-container.inline-btn span:nth-child(2) {
 	background-color: #0077b5;
 	height: 2rem;
 	width: 7rem;
 }
-.il-btn span:nth-child(2) .c {
+.share-btn-container.inline-btn span:nth-child(2) .c {
 	background-color: #009ff5;
 	margin-top: 0.5rem;
 	position: absolute;
@@ -508,17 +444,17 @@ span {
 	width: 2rem;
 	margin-top: -0.01rem;
 }
-.il-btn span:nth-child(2) .c i {
+.share-btn-container.inline-btn span:nth-child(2) .c i {
 	margin-left: 0.5rem;
 	margin-top: 0.5rem;
 }
 
-.il-btn span:nth-child(3) {
+.share-btn-container.inline-btn span:nth-child(3) {
 	background-color: #bd081c;
 	height: 2rem;
 	width: 6.5rem;
 }
-.il-btn span:nth-child(3) .c {
+.share-btn-container.inline-btn span:nth-child(3) .c {
 	background-color: #f51933;
 	margin-top: 0.5rem;
 	position: absolute;
@@ -526,17 +462,17 @@ span {
 	width: 2rem;
 	margin-top: -0.01rem;
 }
-.il-btn span:nth-child(3) .c i {
+.share-btn-container.inline-btn span:nth-child(3) .c i {
 	margin-left: 0.5rem;
 	margin-top: 0.5rem;
 }
 
-.il-btn span:nth-child(4) {
+.share-btn-container.inline-btn span:nth-child(4) {
 	background-color: #25d366;
 	height: 2rem;
 	width: 7rem;
 }
-.il-btn span:nth-child(4) .c {
+.share-btn-container.inline-btn span:nth-child(4) .c {
 	background-color: #40dd7a;
 	margin-top: 0.5rem;
 	position: absolute;
@@ -544,22 +480,24 @@ span {
 	width: 2rem;
 	margin-top: -0.01rem;
 }
-.il-btn span:nth-child(4) .c i {
+.share-btn-container.inline-btn span:nth-child(4) .c i {
 	margin-left: 0.5rem;
 	color: #fff;
 	margin-top: 0.5rem;
 }
 
-.il-btn .p {
+.share-btn-container.inline-btn .p {
 	float: right;
 	padding: 0.5rem;
 }
-.il-btn span:hover {
+.share-btn-container.inline-btn span:hover {
 	transform: scale(1.3);
 	transition: 0.7s;
 }
-/*float css*/
-.float- span:nth-child(1) {
+
+/* Floating secondary buttons */
+
+.share-btn-container.float-sec span:nth-child(1) {
 	padding: 0.5rem;
 	padding-left: 0.9rem;
 	display: block;
@@ -568,7 +506,7 @@ span {
 	background: #1da1f2;
 	padding-bottom: 0.7rem;
 }
-.float- span:nth-child(2) {
+.share-btn-container.float-sec span:nth-child(2) {
 	padding: 0.5rem;
 	padding-left: 0.9rem;
 	display: block;
@@ -577,7 +515,7 @@ span {
 	background: #0077b5;
 	padding-bottom: 0.7rem;
 }
-.float- span:nth-child(3) {
+.share-btn-container.float-sec span:nth-child(3) {
 	padding: 0.5rem;
 	padding-left: 0.9rem;
 	display: block;
@@ -586,7 +524,7 @@ span {
 	background: #bd081c;
 	padding-bottom: 0.7rem;
 }
-.float- span:nth-child(4) {
+.share-btn-container.float-sec span:nth-child(4) {
 	padding: 0.5rem;
 	padding-left: 0.9rem;
 	display: block;
@@ -595,103 +533,103 @@ span {
 	background: #25d366;
 	padding-bottom: 0.7rem;
 }
-.float- a {
+.share-btn-container.float-sec a {
 	text-decoration-line: none;
 	color: #fff;
 }
 
-.float- .p {
+.share-btn-container.float-sec .p {
 	display: none;
 }
-.float- span:hover {
+.share-btn-container.float-sec span:hover {
 	background-color: black;
 	transition: 0.5s;
 }
 /*Black Buttons*/
-.black .p {
+.share-btn-container.black .p {
 	display: none;
 }
-.black {
+.share-btn-container.black {
 	display: flex;
 	justify-content: center;
 }
-.black span {
+.share-btn-container.black span {
 	margin: 1rem;
 	background-color: black;
 	padding: 1rem;
 	border: 1.2px solid #565656;
 	border-radius: 5px;
 }
-.black a {
+.share-btn-container.black a {
 	color: #fff;
 }
-.black span:hover {
+.share-btn-container.black span:hover {
 	transform: translateY(-10px);
 	transition: 0.3s;
 }
 /*black button ends*/
 
 /*round buttons start*/
-.round p {
+.share-btn-container.round p {
 	display: inline;
 }
-.round .p {
+.share-btn-container.round .p {
 	display: none;
 }
-.round a {
+.share-btn-container.round a {
 	text-decoration-line: none;
 }
-.round span:nth-child(1) {
+.share-btn-container.round span:nth-child(1) {
 	margin: 1rem;
 	padding: 1rem;
 	border-radius: 50%;
 	background-color: #1da1f2;
 }
-.round span:nth-child(1) i {
+.share-btn-container.round span:nth-child(1) i {
 	color: #fff;
 }
-.round span:nth-child(2) {
+.share-btn-container.round span:nth-child(2) {
 	margin: 1rem;
 	padding: 1rem;
 	border-radius: 50%;
 	background-color: #0077b5;
 }
-.round span:nth-child(2) i {
+.share-btn-container.round span:nth-child(2) i {
 	color: #fff;
 }
-.round span:nth-child(2) {
+.share-btn-container.round span:nth-child(2) {
 	margin: 1rem;
 	padding: 1rem;
 	border-radius: 50%;
 	background-color: #0077b5;
 }
-.round span:nth-child(2) i {
+.share-btn-container.round span:nth-child(2) i {
 	color: #fff;
 }
-.round span:nth-child(3) {
+.share-btn-container.round span:nth-child(3) {
 	margin: 1rem;
 	padding: 1rem;
 	border-radius: 50%;
 	background-color: #bd081c;
 }
-.round span:nth-child(3) i {
+.share-btn-container.round span:nth-child(3) i {
 	color: #fff;
 }
-.round span:nth-child(4) {
+.share-btn-container.round span:nth-child(4) {
 	margin: 1rem;
 	padding: 1rem;
 	border-radius: 50%;
 	background-color: #25d366;
 }
-.round span:nth-child(4) i {
+.share-btn-container.round span:nth-child(4) i {
 	color: #fff;
 }
-.round {
+.share-btn-container.round {
 	display: flex;
 	overflow: hidden;
 	justify-content: center;
 }
-.round span:hover i {
+.share-btn-container.round span:hover i {
 	animation: up 1s;
 }
 /* round buttons end*/
